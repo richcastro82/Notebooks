@@ -1,0 +1,1258 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary" /><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>KERRY MATRIX | fastpages</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="KERRY MATRIX" />
+<meta name="author" content="Richard Castro" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
+<meta property="og:description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
+<link rel="canonical" href="https://richcastro82.github.io/Notebooks/matrix/2020/08/30/Kerry_Matrix_2.0.html" />
+<meta property="og:url" content="https://richcastro82.github.io/Notebooks/matrix/2020/08/30/Kerry_Matrix_2.0.html" />
+<meta property="og:site_name" content="fastpages" />
+<meta property="og:image" content="https://richcastro82.github.io/Notebooks/images/kerry.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-08-30T00:00:00-05:00" />
+<script type="application/ld+json">
+{"author":{"@type":"Person","name":"Richard Castro"},"headline":"KERRY MATRIX","description":"An easy to use blogging platform with support for Jupyter Notebooks.","datePublished":"2020-08-30T00:00:00-05:00","dateModified":"2020-08-30T00:00:00-05:00","image":"https://richcastro82.github.io/Notebooks/images/kerry.png","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://richcastro82.github.io/Notebooks/matrix/2020/08/30/Kerry_Matrix_2.0.html"},"url":"https://richcastro82.github.io/Notebooks/matrix/2020/08/30/Kerry_Matrix_2.0.html","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/Notebooks/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://richcastro82.github.io/Notebooks/feed.xml" title="fastpages" /><link rel="shortcut icon" type="image/x-icon" href="/Notebooks/images/favicon.ico"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>KERRY MATRIX | fastpages</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="KERRY MATRIX" />
+<meta name="author" content="Richard Castro" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
+<meta property="og:description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
+<link rel="canonical" href="https://richcastro82.github.io/Notebooks/matrix/2020/08/30/Kerry_Matrix_2.0.html" />
+<meta property="og:url" content="https://richcastro82.github.io/Notebooks/matrix/2020/08/30/Kerry_Matrix_2.0.html" />
+<meta property="og:site_name" content="fastpages" />
+<meta property="og:image" content="https://richcastro82.github.io/Notebooks/images/kerry.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-08-30T00:00:00-05:00" />
+<script type="application/ld+json">
+{"author":{"@type":"Person","name":"Richard Castro"},"headline":"KERRY MATRIX","description":"An easy to use blogging platform with support for Jupyter Notebooks.","datePublished":"2020-08-30T00:00:00-05:00","dateModified":"2020-08-30T00:00:00-05:00","image":"https://richcastro82.github.io/Notebooks/images/kerry.png","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://richcastro82.github.io/Notebooks/matrix/2020/08/30/Kerry_Matrix_2.0.html"},"url":"https://richcastro82.github.io/Notebooks/matrix/2020/08/30/Kerry_Matrix_2.0.html","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+<link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
+<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css"><link type="application/atom+xml" rel="alternate" href="https://richcastro82.github.io/Notebooks/feed.xml" title="fastpages" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/Notebooks/">fastpages</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Notebooks/about/">About Me</a><a class="page-link" href="/Notebooks/search/">Search</a><a class="page-link" href="/Notebooks/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">KERRY MATRIX</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2020-08-30T00:00:00-05:00" itemprop="datePublished">
+        Aug 30, 2020
+      </time>• 
+          <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <span class="p-author h-card" itemprop="name">Richard Castro</span></span>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      4 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/Notebooks/categories/#Matrix">Matrix</a>
+        
+      
+      </p>
+    
+
+    
+      
+        <div class="pb-5 d-flex flex-wrap flex-justify-end">
+          <div class="px-2">
+
+    <a href="https://github.com/richcastro82/Notebooks/tree/master/_notebooks/Kerry_Matrix_2.0.ipynb" role="button" target="_blank">
+<img class="notebook-badge-image" src="/Notebooks/assets/badges/github.svg" alt="View On GitHub">
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://mybinder.org/v2/gh/richcastro82/Notebooks/master?filepath=_notebooks%2FKerry_Matrix_2.0.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/Notebooks/assets/badges/binder.svg" alt="Open In Binder"/>
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://colab.research.google.com/github/richcastro82/Notebooks/blob/master/_notebooks/Kerry_Matrix_2.0.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/Notebooks/assets/badges/colab.svg" alt="Open In Colab"/>
+    </a>
+</div>
+        </div>
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul class="section-nav">
+</ul><!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/Kerry_Matrix_2.0.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p></p>
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#collapse</span>
+<span class="c1">#IMPORTING LIBRARIES AND DATA FILES</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="n">mat</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">'../us_m.csv'</span><span class="p">)</span>
+<span class="n">kerry</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">'../kerry.csv'</span><span class="p">)</span>
+<span class="n">rt</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">'https://d14wlfuexuxgcm.cloudfront.net/covid/rt.csv'</span><span class="p">)</span>
+<span class="n">da</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">'https://covidtracking.com/api/v1/states/daily.csv'</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+    </details>
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p></p>
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#collapse</span>
+<span class="c1">#FORMATING DATA FROM LAST WEEKS MATRIX TO MOVE WEEKLY DATA OVER</span>
+<span class="n">mat</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="nb">str</span><span class="o">.</span><span class="n">lower</span><span class="p">,</span> <span class="n">mat</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
+<span class="n">col</span><span class="o">=</span><span class="p">[</span><span class="s1">'state'</span><span class="p">,</span><span class="s1">'social index current'</span><span class="p">,</span><span class="s1">'rt current'</span><span class="p">,</span><span class="s1">'test increase current'</span><span class="p">,</span><span class="s1">'tpr current'</span><span class="p">,</span>
+     <span class="s1">'weekly deaths current'</span><span class="p">,</span><span class="s1">'total deaths current'</span><span class="p">,</span><span class="s1">'total tests current'</span><span class="p">]</span>
+<span class="n">newCol</span><span class="o">=</span><span class="n">mat</span><span class="p">[</span><span class="n">col</span><span class="p">]</span>
+<span class="n">newerCol</span><span class="o">=</span><span class="n">newCol</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s1">'social index current'</span><span class="p">:</span><span class="s1">'social index past'</span> <span class="p">,</span><span class="s1">'rt current'</span><span class="p">:</span><span class="s1">'rt past'</span> <span class="p">,</span><span class="s1">'test increase current'</span><span class="p">:</span><span class="s1">'test increase past'</span><span class="p">,</span>
+       <span class="s1">'tpr current'</span><span class="p">:</span><span class="s1">'tpr past'</span><span class="p">,</span> <span class="s1">'weekly deaths current'</span><span class="p">:</span><span class="s1">'weekly deaths past'</span><span class="p">,</span> <span class="s1">'total deaths current'</span><span class="p">:</span><span class="s1">'total deaths past'</span><span class="p">,</span>
+       <span class="s1">'total tests current'</span><span class="p">:</span><span class="s1">'total tests past'</span><span class="p">})</span>
+<span class="n">kerry</span><span class="o">.</span><span class="n">columns</span><span class="o">=</span><span class="nb">map</span><span class="p">(</span><span class="nb">str</span><span class="o">.</span><span class="n">lower</span><span class="p">,</span> <span class="n">kerry</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+    </details>
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p></p>
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#collapse</span>
+<span class="c1">#CLEANING THE RTLIVE DATA</span>
+<span class="n">today</span><span class="o">=</span><span class="s1">'2020-08-03'</span>
+<span class="n">rtCleaned</span> <span class="o">=</span> <span class="n">rt</span><span class="p">[</span><span class="n">rt</span><span class="p">[</span><span class="s1">'date'</span><span class="p">]</span><span class="o">==</span><span class="n">today</span><span class="p">]</span>
+<span class="n">rtColumns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'date'</span><span class="p">,</span> <span class="s1">'region'</span><span class="p">,</span> <span class="s1">'mean'</span><span class="p">]</span>
+<span class="n">rtCleaned</span> <span class="o">=</span> <span class="n">rtCleaned</span><span class="p">[</span><span class="n">rtColumns</span><span class="p">]</span>
+<span class="n">rtCleaned</span> <span class="o">=</span> <span class="n">rtCleaned</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span> <span class="o">=</span> <span class="p">{</span><span class="s1">'region'</span><span class="p">:</span><span class="s1">'state'</span><span class="p">})</span>
+<span class="n">rtCleaned</span> <span class="o">=</span> <span class="n">rtCleaned</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s1">'state'</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+    </details>
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p></p>
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#collapse</span>
+<span class="c1">#CLEANING THE DAILY COVID DATA</span>
+<span class="n">dateRange</span><span class="o">=</span><span class="s1">'20200803'</span>
+<span class="n">dailyColumns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'date'</span><span class="p">,</span> <span class="s1">'state'</span><span class="p">,</span> <span class="s1">'death'</span><span class="p">,</span> <span class="s1">'positiveIncrease'</span><span class="p">,</span> <span class="s1">'totalTestResultsIncrease'</span><span class="p">,</span> <span class="s1">'deathIncrease'</span><span class="p">]</span>
+<span class="n">dailyData</span> <span class="o">=</span> <span class="n">da</span><span class="p">[</span><span class="n">dailyColumns</span><span class="p">]</span>
+<span class="n">dailyData</span> <span class="o">=</span> <span class="n">dailyData</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s1">'state'</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">dailyCleaned</span> <span class="o">=</span> <span class="n">dailyData</span><span class="p">[</span><span class="n">dailyData</span><span class="p">[</span><span class="s1">'date'</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span><span class="o">==</span><span class="n">dateRange</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+    </details>
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p></p>
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#collapse</span>
+<span class="c1">#MERGING THE DATASETS TOGETHER</span>
+<span class="n">mergef</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">kerry</span><span class="p">,</span> <span class="n">rtCleaned</span><span class="p">,</span>  <span class="n">on</span><span class="o">=</span><span class="s1">'state'</span><span class="p">)</span>
+<span class="n">merget</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">mergef</span><span class="p">,</span> <span class="n">dailyCleaned</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="s1">'state'</span><span class="p">)</span>
+<span class="n">merger</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">merget</span><span class="p">,</span> <span class="n">newerCol</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="s1">'state'</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+    </details>
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#SHOW THE LOCATIONS FOR CLIENT</span>
+<span class="n">kerry</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>state</th>
+      <th>population</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>AL</td>
+      <td>4903185</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>AR</td>
+      <td>3017804</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>CA</td>
+      <td>39512223</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>FL</td>
+      <td>21477737</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>GA</td>
+      <td>10617423</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>IA</td>
+      <td>3155070</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>IL</td>
+      <td>12671821</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>IN</td>
+      <td>6732219</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>KS</td>
+      <td>2913314</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>MD</td>
+      <td>6045680</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>ME</td>
+      <td>1344212</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>MN</td>
+      <td>5639632</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>MO</td>
+      <td>6137428</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>MS</td>
+      <td>2976149</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>NJ</td>
+      <td>8882190</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>NY</td>
+      <td>19453561</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>OH</td>
+      <td>11689100</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>TN</td>
+      <td>6829174</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>TX</td>
+      <td>28995881</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>VA</td>
+      <td>8535519</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>WA</td>
+      <td>7614893</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>WI</td>
+      <td>5822434</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#SHOW CLIP OF THE RT DATA</span>
+<span class="n">rtCleaned</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>date</th>
+      <th>state</th>
+      <th>mean</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>8000</th>
+      <td>2020-08-03</td>
+      <td>AK</td>
+      <td>1.045968</td>
+    </tr>
+    <tr>
+      <th>3675</th>
+      <td>2020-08-03</td>
+      <td>AL</td>
+      <td>1.037615</td>
+    </tr>
+    <tr>
+      <th>4948</th>
+      <td>2020-08-03</td>
+      <td>AR</td>
+      <td>1.032516</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#SHOW CLIP OF THE DAILY DATA</span>
+<span class="n">dailyCleaned</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>date</th>
+      <th>state</th>
+      <th>death</th>
+      <th>positiveIncrease</th>
+      <th>totalTestResultsIncrease</th>
+      <th>deathIncrease</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>112</th>
+      <td>20200803</td>
+      <td>AK</td>
+      <td>25.0</td>
+      <td>80</td>
+      <td>2717</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>113</th>
+      <td>20200803</td>
+      <td>AL</td>
+      <td>1633.0</td>
+      <td>1217</td>
+      <td>7981</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th>114</th>
+      <td>20200803</td>
+      <td>AR</td>
+      <td>475.0</td>
+      <td>1424</td>
+      <td>12819</td>
+      <td>17</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#SHOW CLIP OF THE PAST DATA</span>
+<span class="n">newerCol</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>state</th>
+      <th>social index past</th>
+      <th>rt past</th>
+      <th>test increase past</th>
+      <th>tpr past</th>
+      <th>weekly deaths past</th>
+      <th>total deaths past</th>
+      <th>total tests past</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>AL</td>
+      <td>22</td>
+      <td>1.111944</td>
+      <td>11546</td>
+      <td>21%</td>
+      <td>142</td>
+      <td>1633</td>
+      <td>56092</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>AR</td>
+      <td>76</td>
+      <td>1.037065</td>
+      <td>5150</td>
+      <td>12%</td>
+      <td>67</td>
+      <td>475</td>
+      <td>42509</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>CA</td>
+      <td>22</td>
+      <td>0.970088</td>
+      <td>54351</td>
+      <td>6%</td>
+      <td>943</td>
+      <td>9388</td>
+      <td>888118</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#SHOW THE MERGED DATA</span>
+<span class="n">merger</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>state</th>
+      <th>population</th>
+      <th>date_x</th>
+      <th>mean</th>
+      <th>date_y</th>
+      <th>death</th>
+      <th>positiveIncrease</th>
+      <th>totalTestResultsIncrease</th>
+      <th>deathIncrease</th>
+      <th>social index past</th>
+      <th>rt past</th>
+      <th>test increase past</th>
+      <th>tpr past</th>
+      <th>weekly deaths past</th>
+      <th>total deaths past</th>
+      <th>total tests past</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>AL</td>
+      <td>4903185</td>
+      <td>2020-08-03</td>
+      <td>1.037615</td>
+      <td>20200803</td>
+      <td>1633.0</td>
+      <td>1217</td>
+      <td>7981</td>
+      <td>6</td>
+      <td>22</td>
+      <td>1.111944</td>
+      <td>11546</td>
+      <td>21%</td>
+      <td>142</td>
+      <td>1633</td>
+      <td>56092</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>AR</td>
+      <td>3017804</td>
+      <td>2020-08-03</td>
+      <td>1.032516</td>
+      <td>20200803</td>
+      <td>475.0</td>
+      <td>1424</td>
+      <td>12819</td>
+      <td>17</td>
+      <td>76</td>
+      <td>1.037065</td>
+      <td>5150</td>
+      <td>12%</td>
+      <td>67</td>
+      <td>475</td>
+      <td>42509</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>CA</td>
+      <td>39512223</td>
+      <td>2020-08-03</td>
+      <td>0.887432</td>
+      <td>20200803</td>
+      <td>9388.0</td>
+      <td>5739</td>
+      <td>148721</td>
+      <td>32</td>
+      <td>22</td>
+      <td>0.970088</td>
+      <td>54351</td>
+      <td>6%</td>
+      <td>943</td>
+      <td>9388</td>
+      <td>888118</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>FL</td>
+      <td>21477737</td>
+      <td>2020-08-03</td>
+      <td>0.965805</td>
+      <td>20200803</td>
+      <td>7279.0</td>
+      <td>4752</td>
+      <td>31801</td>
+      <td>73</td>
+      <td>85</td>
+      <td>0.986019</td>
+      <td>59137</td>
+      <td>18%</td>
+      <td>1230</td>
+      <td>7279</td>
+      <td>321301</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>GA</td>
+      <td>10617423</td>
+      <td>2020-08-03</td>
+      <td>0.953591</td>
+      <td>20200803</td>
+      <td>3842.0</td>
+      <td>2258</td>
+      <td>21761</td>
+      <td>2</td>
+      <td>22</td>
+      <td>0.953783</td>
+      <td>24592</td>
+      <td>13%</td>
+      <td>333</td>
+      <td>3842</td>
+      <td>193438</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>IA</td>
+      <td>3155070</td>
+      <td>2020-08-03</td>
+      <td>0.986369</td>
+      <td>20200803</td>
+      <td>882.0</td>
+      <td>349</td>
+      <td>2357</td>
+      <td>6</td>
+      <td>16</td>
+      <td>1.010162</td>
+      <td>3287</td>
+      <td>10%</td>
+      <td>49</td>
+      <td>882</td>
+      <td>31630</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>IL</td>
+      <td>12671821</td>
+      <td>2020-08-03</td>
+      <td>1.079520</td>
+      <td>20200803</td>
+      <td>7723.0</td>
+      <td>1298</td>
+      <td>28475</td>
+      <td>9</td>
+      <td>44</td>
+      <td>1.092876</td>
+      <td>10625</td>
+      <td>4%</td>
+      <td>115</td>
+      <td>7723</td>
+      <td>264702</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>IN</td>
+      <td>6732219</td>
+      <td>2020-08-03</td>
+      <td>1.005326</td>
+      <td>20200803</td>
+      <td>2980.0</td>
+      <td>576</td>
+      <td>6439</td>
+      <td>5</td>
+      <td>54</td>
+      <td>1.001587</td>
+      <td>5526</td>
+      <td>8%</td>
+      <td>74</td>
+      <td>2980</td>
+      <td>67691</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>KS</td>
+      <td>2913314</td>
+      <td>2020-08-03</td>
+      <td>1.062584</td>
+      <td>20200803</td>
+      <td>365.0</td>
+      <td>1064</td>
+      <td>9332</td>
+      <td>7</td>
+      <td>46</td>
+      <td>1.071201</td>
+      <td>2704</td>
+      <td>12%</td>
+      <td>30</td>
+      <td>365</td>
+      <td>22903</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>MD</td>
+      <td>6045680</td>
+      <td>2020-08-03</td>
+      <td>1.031896</td>
+      <td>20200803</td>
+      <td>3523.0</td>
+      <td>870</td>
+      <td>15851</td>
+      <td>8</td>
+      <td>45</td>
+      <td>1.047616</td>
+      <td>6268</td>
+      <td>6%</td>
+      <td>76</td>
+      <td>3523</td>
+      <td>105119</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>ME</td>
+      <td>1344212</td>
+      <td>2020-08-03</td>
+      <td>0.935590</td>
+      <td>20200803</td>
+      <td>124.0</td>
+      <td>12</td>
+      <td>2071</td>
+      <td>1</td>
+      <td>45</td>
+      <td>0.975832</td>
+      <td>138</td>
+      <td>1%</td>
+      <td>5</td>
+      <td>124</td>
+      <td>16704</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>MN</td>
+      <td>5639632</td>
+      <td>2020-08-03</td>
+      <td>1.103790</td>
+      <td>20200803</td>
+      <td>1656.0</td>
+      <td>613</td>
+      <td>13663</td>
+      <td>2</td>
+      <td>45</td>
+      <td>1.074376</td>
+      <td>4757</td>
+      <td>-5%</td>
+      <td>40</td>
+      <td>1656</td>
+      <td>-98722</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>MO</td>
+      <td>6137428</td>
+      <td>2020-08-03</td>
+      <td>1.166522</td>
+      <td>20200803</td>
+      <td>1255.0</td>
+      <td>1047</td>
+      <td>10481</td>
+      <td>2</td>
+      <td>1</td>
+      <td>1.220294</td>
+      <td>9837</td>
+      <td>14%</td>
+      <td>54</td>
+      <td>1255</td>
+      <td>71044</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>MS</td>
+      <td>2976149</td>
+      <td>2020-08-03</td>
+      <td>1.071332</td>
+      <td>20200803</td>
+      <td>1711.0</td>
+      <td>572</td>
+      <td>572</td>
+      <td>8</td>
+      <td>13</td>
+      <td>1.061724</td>
+      <td>8168</td>
+      <td>23%</td>
+      <td>210</td>
+      <td>1711</td>
+      <td>35120</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>NJ</td>
+      <td>8882190</td>
+      <td>2020-08-03</td>
+      <td>0.975566</td>
+      <td>20200803</td>
+      <td>15846.0</td>
+      <td>264</td>
+      <td>18702</td>
+      <td>10</td>
+      <td>15</td>
+      <td>0.965851</td>
+      <td>2802</td>
+      <td>2%</td>
+      <td>42</td>
+      <td>15846</td>
+      <td>180739</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>NY</td>
+      <td>19453561</td>
+      <td>2020-08-03</td>
+      <td>0.963728</td>
+      <td>20200803</td>
+      <td>25172.0</td>
+      <td>545</td>
+      <td>51839</td>
+      <td>2</td>
+      <td>52</td>
+      <td>0.941746</td>
+      <td>4499</td>
+      <td>1%</td>
+      <td>55</td>
+      <td>25172</td>
+      <td>455625</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>OH</td>
+      <td>11689100</td>
+      <td>2020-08-03</td>
+      <td>0.941189</td>
+      <td>20200803</td>
+      <td>3539.0</td>
+      <td>932</td>
+      <td>17997</td>
+      <td>10</td>
+      <td>64</td>
+      <td>0.918456</td>
+      <td>8786</td>
+      <td>5%</td>
+      <td>195</td>
+      <td>3539</td>
+      <td>191445</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>TN</td>
+      <td>6829174</td>
+      <td>2020-08-03</td>
+      <td>0.986842</td>
+      <td>20200803</td>
+      <td>1092.0</td>
+      <td>1009</td>
+      <td>12235</td>
+      <td>19</td>
+      <td>15</td>
+      <td>0.980140</td>
+      <td>14147</td>
+      <td>9%</td>
+      <td>114</td>
+      <td>1092</td>
+      <td>163081</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>TX</td>
+      <td>28995881</td>
+      <td>2020-08-03</td>
+      <td>0.957834</td>
+      <td>20200803</td>
+      <td>7016.0</td>
+      <td>11529</td>
+      <td>86807</td>
+      <td>179</td>
+      <td>35</td>
+      <td>0.933380</td>
+      <td>56091</td>
+      <td>14%</td>
+      <td>1303</td>
+      <td>7016</td>
+      <td>405704</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>VA</td>
+      <td>8535519</td>
+      <td>2020-08-03</td>
+      <td>1.096200</td>
+      <td>20200803</td>
+      <td>2218.0</td>
+      <td>1324</td>
+      <td>15082</td>
+      <td>0</td>
+      <td>85</td>
+      <td>1.023291</td>
+      <td>7034</td>
+      <td>6%</td>
+      <td>136</td>
+      <td>2218</td>
+      <td>115897</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>WA</td>
+      <td>7614893</td>
+      <td>2020-08-03</td>
+      <td>1.091667</td>
+      <td>20200803</td>
+      <td>1596.0</td>
+      <td>632</td>
+      <td>6752</td>
+      <td>4</td>
+      <td>25</td>
+      <td>1.012360</td>
+      <td>5538</td>
+      <td>6%</td>
+      <td>95</td>
+      <td>57</td>
+      <td>88933</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>WI</td>
+      <td>5822434</td>
+      <td>2020-08-03</td>
+      <td>0.918711</td>
+      <td>20200803</td>
+      <td>956.0</td>
+      <td>411</td>
+      <td>7180</td>
+      <td>1</td>
+      <td>26</td>
+      <td>0.985503</td>
+      <td>6120</td>
+      <td>7%</td>
+      <td>56</td>
+      <td>1596</td>
+      <td>93650</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+</div>
+
+
+
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="richcastro82/Notebooks"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/Notebooks/matrix/2020/08/30/Kerry_Matrix_2.0.html" hidden></a>
+</article>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/Notebooks/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/Notebooks/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/Notebooks/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>An easy to use blogging platform with support for Jupyter Notebooks.</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/fastai" title="fastai"><svg class="svg-icon grey"><use xlink:href="/Notebooks/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://twitter.com/fastdotai" title="fastdotai"><svg class="svg-icon grey"><use xlink:href="/Notebooks/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
