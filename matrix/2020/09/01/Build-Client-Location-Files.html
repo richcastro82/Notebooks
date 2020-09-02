@@ -99,7 +99,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      3 min read
+      5 min read
     
 </span></p>
 
@@ -150,7 +150,7 @@ window.onload = wrap_img;
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#collapse-hide</span>
 <span class="n">client</span><span class="o">=</span><span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Client Name : &#39;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;PULLING STATE AND COUNTY LOCATIONS FOR: &#39;</span> <span class="o">+</span> <span class="n">client</span><span class="o">.</span><span class="n">upper</span><span class="p">())</span>
-<span class="n">clientLocations</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;../_data/client_locations/&#39;</span> <span class="o">+</span> <span class="n">client</span> <span class="o">+</span> <span class="s1">&#39;.csv&#39;</span><span class="p">)</span>
+<span class="n">clientLocations</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;../data/clients/&#39;</span><span class="o">+</span><span class="n">client</span><span class="o">+</span><span class="s1">&#39;/&#39;</span><span class="o">+</span><span class="n">client</span><span class="o">+</span><span class="s1">&#39;.csv&#39;</span><span class="p">)</span>
 
 <span class="n">clientLocations</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="nb">str</span><span class="o">.</span><span class="n">lower</span><span class="p">,</span> <span class="n">clientLocations</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
 <span class="n">clientLocations</span>
@@ -167,8 +167,8 @@ window.onload = wrap_img;
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Client Name : pepsi2
-PULLING STATE AND COUNTY LOCATIONS FOR: PEPSI2
+<pre>Client Name : kelloggs
+PULLING STATE AND COUNTY LOCATIONS FOR: KELLOGGS
 </pre>
 </div>
 </div>
@@ -202,43 +202,128 @@ PULLING STATE AND COUNTY LOCATIONS FOR: PEPSI2
   <tbody>
     <tr>
       <th>0</th>
-      <td>Ohio</td>
-      <td>Summit</td>
+      <td>Colorado</td>
+      <td>Arapahoe</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>Alabama</td>
-      <td>Madison</td>
+      <td>Arkansas</td>
+      <td>Benton</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>New York</td>
-      <td>Onondaga</td>
+      <td>Michigan</td>
+      <td>Calhoun</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>Virginia</td>
-      <td>Roanoke</td>
+      <td>New Jersey</td>
+      <td>Camden</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>Pennsylvania</td>
-      <td>Lackawanna</td>
+      <td>Illinois</td>
+      <td>Cook</td>
     </tr>
     <tr>
       <th>5</th>
-      <td>Illinois</td>
-      <td>Champaign</td>
+      <td>Tennessee</td>
+      <td>Davidson</td>
     </tr>
     <tr>
       <th>6</th>
-      <td>Indiana</td>
-      <td>Marion</td>
+      <td>Nebraska</td>
+      <td>Douglas</td>
     </tr>
     <tr>
       <th>7</th>
-      <td>Wisconsin</td>
-      <td>Dane</td>
+      <td>Illinois</td>
+      <td>DuPage</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>Tennessee</td>
+      <td>Fayette</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>Georgia</td>
+      <td>Floyd</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>Ohio</td>
+      <td>Hamilton</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>Minnesota</td>
+      <td>Hennepin</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>Florida</td>
+      <td>Hillsborough</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>Michigan</td>
+      <td>Kent</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>Pennsylvania</td>
+      <td>Lancaster</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>Pennsylvania</td>
+      <td>Lycoming</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>Tennessee</td>
+      <td>Madison</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>Pennsylvania</td>
+      <td>Montgomery</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>Ohio</td>
+      <td>Muskingum</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>Kentucky</td>
+      <td>Pike</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>California</td>
+      <td>San Diego</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>California</td>
+      <td>Santa Clara</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>Tennessee</td>
+      <td>Shelby</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>North Carolina</td>
+      <td>Wake</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>Kansas</td>
+      <td>Wyandotte</td>
     </tr>
   </tbody>
 </table>
@@ -263,7 +348,7 @@ PULLING STATE AND COUNTY LOCATIONS FOR: PEPSI2
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#collapse-hide</span>
-<span class="n">cenLat</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;../_data/Data_Sources/Census/Geo-Fips.csv&#39;</span><span class="p">)</span>
+<span class="n">cenLat</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;../data/sources/Census/Geo-Fips.csv&#39;</span><span class="p">)</span>
 <span class="n">cenLat</span>
 </pre></div>
 
@@ -488,75 +573,228 @@ PULLING STATE AND COUNTY LOCATIONS FOR: PEPSI2
   <tbody>
     <tr>
       <th>0</th>
-      <td>17019</td>
+      <td>8005</td>
       <td>US</td>
-      <td>Illinois</td>
-      <td>Champaign</td>
-      <td>40.139194</td>
-      <td>-88.200466</td>
+      <td>Colorado</td>
+      <td>Arapahoe</td>
+      <td>39.649775</td>
+      <td>-104.335362</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>55025</td>
+      <td>5007</td>
       <td>US</td>
-      <td>Wisconsin</td>
-      <td>Dane</td>
-      <td>43.066016</td>
-      <td>-89.417338</td>
+      <td>Arkansas</td>
+      <td>Benton</td>
+      <td>36.336447</td>
+      <td>-94.256808</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>42069</td>
+      <td>26025</td>
       <td>US</td>
-      <td>Pennsylvania</td>
-      <td>Lackawanna</td>
-      <td>41.435647</td>
-      <td>-75.603792</td>
+      <td>Michigan</td>
+      <td>Calhoun</td>
+      <td>42.246338</td>
+      <td>-85.004936</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>1089</td>
+      <td>34007</td>
       <td>US</td>
-      <td>Alabama</td>
-      <td>Madison</td>
-      <td>34.763271</td>
-      <td>-86.550696</td>
+      <td>New Jersey</td>
+      <td>Camden</td>
+      <td>39.803438</td>
+      <td>-74.963888</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>18097</td>
+      <td>17031</td>
       <td>US</td>
-      <td>Indiana</td>
-      <td>Marion</td>
-      <td>39.781636</td>
-      <td>-86.138263</td>
+      <td>Illinois</td>
+      <td>Cook</td>
+      <td>41.841448</td>
+      <td>-87.816588</td>
     </tr>
     <tr>
       <th>5</th>
-      <td>36067</td>
+      <td>47037</td>
       <td>US</td>
-      <td>New York</td>
-      <td>Onondaga</td>
-      <td>43.004919</td>
-      <td>-76.199712</td>
+      <td>Tennessee</td>
+      <td>Davidson</td>
+      <td>36.170074</td>
+      <td>-86.786461</td>
     </tr>
     <tr>
       <th>6</th>
-      <td>51161</td>
+      <td>31055</td>
       <td>US</td>
-      <td>Virginia</td>
-      <td>Roanoke</td>
-      <td>37.268658</td>
-      <td>-80.063968</td>
+      <td>Nebraska</td>
+      <td>Douglas</td>
+      <td>41.295183</td>
+      <td>-96.150853</td>
     </tr>
     <tr>
       <th>7</th>
-      <td>39153</td>
+      <td>17043</td>
+      <td>US</td>
+      <td>Illinois</td>
+      <td>DuPage</td>
+      <td>41.851170</td>
+      <td>-88.086427</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>47047</td>
+      <td>US</td>
+      <td>Tennessee</td>
+      <td>Fayette</td>
+      <td>35.196158</td>
+      <td>-89.413990</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>13115</td>
+      <td>US</td>
+      <td>Georgia</td>
+      <td>Floyd</td>
+      <td>34.262683</td>
+      <td>-85.215774</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>39061</td>
       <td>US</td>
       <td>Ohio</td>
-      <td>Summit</td>
-      <td>41.124647</td>
-      <td>-81.531231</td>
+      <td>Hamilton</td>
+      <td>39.196736</td>
+      <td>-84.545029</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>27053</td>
+      <td>US</td>
+      <td>Minnesota</td>
+      <td>Hennepin</td>
+      <td>45.007615</td>
+      <td>-93.476949</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>12057</td>
+      <td>US</td>
+      <td>Florida</td>
+      <td>Hillsborough</td>
+      <td>27.927656</td>
+      <td>-82.320132</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>26081</td>
+      <td>US</td>
+      <td>Michigan</td>
+      <td>Kent</td>
+      <td>43.031977</td>
+      <td>-85.549346</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>42071</td>
+      <td>US</td>
+      <td>Pennsylvania</td>
+      <td>Lancaster</td>
+      <td>40.039046</td>
+      <td>-76.247701</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>42081</td>
+      <td>US</td>
+      <td>Pennsylvania</td>
+      <td>Lycoming</td>
+      <td>41.343105</td>
+      <td>-77.066300</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>47113</td>
+      <td>US</td>
+      <td>Tennessee</td>
+      <td>Madison</td>
+      <td>35.611820</td>
+      <td>-88.840760</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>42091</td>
+      <td>US</td>
+      <td>Pennsylvania</td>
+      <td>Montgomery</td>
+      <td>40.210537</td>
+      <td>-75.366523</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>39119</td>
+      <td>US</td>
+      <td>Ohio</td>
+      <td>Muskingum</td>
+      <td>39.965760</td>
+      <td>-81.943633</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>21195</td>
+      <td>US</td>
+      <td>Kentucky</td>
+      <td>Pike</td>
+      <td>37.470883</td>
+      <td>-82.394874</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>6073</td>
+      <td>US</td>
+      <td>California</td>
+      <td>San Diego</td>
+      <td>33.034846</td>
+      <td>-116.736533</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>6085</td>
+      <td>US</td>
+      <td>California</td>
+      <td>Santa Clara</td>
+      <td>37.231049</td>
+      <td>-121.697046</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>47157</td>
+      <td>US</td>
+      <td>Tennessee</td>
+      <td>Shelby</td>
+      <td>35.186478</td>
+      <td>-89.896924</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>37183</td>
+      <td>US</td>
+      <td>North Carolina</td>
+      <td>Wake</td>
+      <td>35.788793</td>
+      <td>-78.652492</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>20209</td>
+      <td>US</td>
+      <td>Kansas</td>
+      <td>Wyandotte</td>
+      <td>39.117273</td>
+      <td>-94.763782</td>
     </tr>
   </tbody>
 </table>
@@ -581,7 +819,7 @@ PULLING STATE AND COUNTY LOCATIONS FOR: PEPSI2
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#collapse-hide</span>
-<span class="n">cen</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;../_data/Data_Sources/Census/Census_2019.csv&#39;</span><span class="p">)</span>
+<span class="n">cen</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;../data/sources/Census/Census_2019.csv&#39;</span><span class="p">)</span>
 <span class="n">cCol</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;state&#39;</span><span class="p">,</span> <span class="s1">&#39;county&#39;</span><span class="p">,</span> <span class="s1">&#39;pop19&#39;</span><span class="p">]</span>
 <span class="n">censusData</span><span class="o">=</span><span class="n">cen</span><span class="p">[</span><span class="n">cCol</span><span class="p">]</span>
 <span class="n">censusData</span>
@@ -731,7 +969,7 @@ PULLING STATE AND COUNTY LOCATIONS FOR: PEPSI2
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>(8, 6)</pre>
+<pre>(25, 6)</pre>
 </div>
 
 </div>
@@ -767,7 +1005,7 @@ PULLING STATE AND COUNTY LOCATIONS FOR: PEPSI2
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>THIS IS THE ORIGINAL LOCATIONS FILE FOR:pepsi2
+<pre>THIS IS THE ORIGINAL LOCATIONS FILE FOR:kelloggs
 </pre>
 </div>
 </div>
@@ -801,43 +1039,128 @@ PULLING STATE AND COUNTY LOCATIONS FOR: PEPSI2
   <tbody>
     <tr>
       <th>0</th>
-      <td>Ohio</td>
-      <td>Summit</td>
+      <td>Colorado</td>
+      <td>Arapahoe</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>Alabama</td>
-      <td>Madison</td>
+      <td>Arkansas</td>
+      <td>Benton</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>New York</td>
-      <td>Onondaga</td>
+      <td>Michigan</td>
+      <td>Calhoun</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>Virginia</td>
-      <td>Roanoke</td>
+      <td>New Jersey</td>
+      <td>Camden</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>Pennsylvania</td>
-      <td>Lackawanna</td>
+      <td>Illinois</td>
+      <td>Cook</td>
     </tr>
     <tr>
       <th>5</th>
-      <td>Illinois</td>
-      <td>Champaign</td>
+      <td>Tennessee</td>
+      <td>Davidson</td>
     </tr>
     <tr>
       <th>6</th>
-      <td>Indiana</td>
-      <td>Marion</td>
+      <td>Nebraska</td>
+      <td>Douglas</td>
     </tr>
     <tr>
       <th>7</th>
-      <td>Wisconsin</td>
-      <td>Dane</td>
+      <td>Illinois</td>
+      <td>DuPage</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>Tennessee</td>
+      <td>Fayette</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>Georgia</td>
+      <td>Floyd</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>Ohio</td>
+      <td>Hamilton</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>Minnesota</td>
+      <td>Hennepin</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>Florida</td>
+      <td>Hillsborough</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>Michigan</td>
+      <td>Kent</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>Pennsylvania</td>
+      <td>Lancaster</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>Pennsylvania</td>
+      <td>Lycoming</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>Tennessee</td>
+      <td>Madison</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>Pennsylvania</td>
+      <td>Montgomery</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>Ohio</td>
+      <td>Muskingum</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>Kentucky</td>
+      <td>Pike</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>California</td>
+      <td>San Diego</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>California</td>
+      <td>Santa Clara</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>Tennessee</td>
+      <td>Shelby</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>North Carolina</td>
+      <td>Wake</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>Kansas</td>
+      <td>Wyandotte</td>
     </tr>
   </tbody>
 </table>
@@ -1117,76 +1440,229 @@ PULLING STATE AND COUNTY LOCATIONS FOR: PEPSI2
   </thead>
   <tbody>
     <tr>
-      <th>17019</th>
+      <th>8005</th>
+      <td>US</td>
+      <td>Colorado</td>
+      <td>Arapahoe</td>
+      <td>39.649775</td>
+      <td>-104.335362</td>
+      <td>656590</td>
+    </tr>
+    <tr>
+      <th>5007</th>
+      <td>US</td>
+      <td>Arkansas</td>
+      <td>Benton</td>
+      <td>36.336447</td>
+      <td>-94.256808</td>
+      <td>279141</td>
+    </tr>
+    <tr>
+      <th>26025</th>
+      <td>US</td>
+      <td>Michigan</td>
+      <td>Calhoun</td>
+      <td>42.246338</td>
+      <td>-85.004936</td>
+      <td>134159</td>
+    </tr>
+    <tr>
+      <th>34007</th>
+      <td>US</td>
+      <td>New Jersey</td>
+      <td>Camden</td>
+      <td>39.803438</td>
+      <td>-74.963888</td>
+      <td>506471</td>
+    </tr>
+    <tr>
+      <th>17031</th>
       <td>US</td>
       <td>Illinois</td>
-      <td>Champaign</td>
-      <td>40.139194</td>
-      <td>-88.200466</td>
-      <td>209689</td>
+      <td>Cook</td>
+      <td>41.841448</td>
+      <td>-87.816588</td>
+      <td>5150233</td>
     </tr>
     <tr>
-      <th>55025</th>
+      <th>47037</th>
       <td>US</td>
-      <td>Wisconsin</td>
-      <td>Dane</td>
-      <td>43.066016</td>
-      <td>-89.417338</td>
-      <td>546695</td>
+      <td>Tennessee</td>
+      <td>Davidson</td>
+      <td>36.170074</td>
+      <td>-86.786461</td>
+      <td>694144</td>
     </tr>
     <tr>
-      <th>42069</th>
+      <th>31055</th>
       <td>US</td>
-      <td>Pennsylvania</td>
-      <td>Lackawanna</td>
-      <td>41.435647</td>
-      <td>-75.603792</td>
-      <td>209674</td>
+      <td>Nebraska</td>
+      <td>Douglas</td>
+      <td>41.295183</td>
+      <td>-96.150853</td>
+      <td>571327</td>
     </tr>
     <tr>
-      <th>1089</th>
+      <th>17043</th>
       <td>US</td>
-      <td>Alabama</td>
-      <td>Madison</td>
-      <td>34.763271</td>
-      <td>-86.550696</td>
-      <td>372909</td>
+      <td>Illinois</td>
+      <td>DuPage</td>
+      <td>41.851170</td>
+      <td>-88.086427</td>
+      <td>922921</td>
     </tr>
     <tr>
-      <th>18097</th>
+      <th>47047</th>
       <td>US</td>
-      <td>Indiana</td>
-      <td>Marion</td>
-      <td>39.781636</td>
-      <td>-86.138263</td>
-      <td>964582</td>
+      <td>Tennessee</td>
+      <td>Fayette</td>
+      <td>35.196158</td>
+      <td>-89.413990</td>
+      <td>41133</td>
     </tr>
     <tr>
-      <th>36067</th>
+      <th>13115</th>
       <td>US</td>
-      <td>New York</td>
-      <td>Onondaga</td>
-      <td>43.004919</td>
-      <td>-76.199712</td>
-      <td>460528</td>
+      <td>Georgia</td>
+      <td>Floyd</td>
+      <td>34.262683</td>
+      <td>-85.215774</td>
+      <td>98498</td>
     </tr>
     <tr>
-      <th>51161</th>
-      <td>US</td>
-      <td>Virginia</td>
-      <td>Roanoke</td>
-      <td>37.268658</td>
-      <td>-80.063968</td>
-      <td>94186</td>
-    </tr>
-    <tr>
-      <th>39153</th>
+      <th>39061</th>
       <td>US</td>
       <td>Ohio</td>
-      <td>Summit</td>
-      <td>41.124647</td>
-      <td>-81.531231</td>
-      <td>541013</td>
+      <td>Hamilton</td>
+      <td>39.196736</td>
+      <td>-84.545029</td>
+      <td>817473</td>
+    </tr>
+    <tr>
+      <th>27053</th>
+      <td>US</td>
+      <td>Minnesota</td>
+      <td>Hennepin</td>
+      <td>45.007615</td>
+      <td>-93.476949</td>
+      <td>1265843</td>
+    </tr>
+    <tr>
+      <th>12057</th>
+      <td>US</td>
+      <td>Florida</td>
+      <td>Hillsborough</td>
+      <td>27.927656</td>
+      <td>-82.320132</td>
+      <td>1471968</td>
+    </tr>
+    <tr>
+      <th>26081</th>
+      <td>US</td>
+      <td>Michigan</td>
+      <td>Kent</td>
+      <td>43.031977</td>
+      <td>-85.549346</td>
+      <td>656955</td>
+    </tr>
+    <tr>
+      <th>42071</th>
+      <td>US</td>
+      <td>Pennsylvania</td>
+      <td>Lancaster</td>
+      <td>40.039046</td>
+      <td>-76.247701</td>
+      <td>545724</td>
+    </tr>
+    <tr>
+      <th>42081</th>
+      <td>US</td>
+      <td>Pennsylvania</td>
+      <td>Lycoming</td>
+      <td>41.343105</td>
+      <td>-77.066300</td>
+      <td>113299</td>
+    </tr>
+    <tr>
+      <th>47113</th>
+      <td>US</td>
+      <td>Tennessee</td>
+      <td>Madison</td>
+      <td>35.611820</td>
+      <td>-88.840760</td>
+      <td>97984</td>
+    </tr>
+    <tr>
+      <th>42091</th>
+      <td>US</td>
+      <td>Pennsylvania</td>
+      <td>Montgomery</td>
+      <td>40.210537</td>
+      <td>-75.366523</td>
+      <td>830915</td>
+    </tr>
+    <tr>
+      <th>39119</th>
+      <td>US</td>
+      <td>Ohio</td>
+      <td>Muskingum</td>
+      <td>39.965760</td>
+      <td>-81.943633</td>
+      <td>86215</td>
+    </tr>
+    <tr>
+      <th>21195</th>
+      <td>US</td>
+      <td>Kentucky</td>
+      <td>Pike</td>
+      <td>37.470883</td>
+      <td>-82.394874</td>
+      <td>57876</td>
+    </tr>
+    <tr>
+      <th>6073</th>
+      <td>US</td>
+      <td>California</td>
+      <td>San Diego</td>
+      <td>33.034846</td>
+      <td>-116.736533</td>
+      <td>3338330</td>
+    </tr>
+    <tr>
+      <th>6085</th>
+      <td>US</td>
+      <td>California</td>
+      <td>Santa Clara</td>
+      <td>37.231049</td>
+      <td>-121.697046</td>
+      <td>1927852</td>
+    </tr>
+    <tr>
+      <th>47157</th>
+      <td>US</td>
+      <td>Tennessee</td>
+      <td>Shelby</td>
+      <td>35.186478</td>
+      <td>-89.896924</td>
+      <td>937166</td>
+    </tr>
+    <tr>
+      <th>37183</th>
+      <td>US</td>
+      <td>North Carolina</td>
+      <td>Wake</td>
+      <td>35.788793</td>
+      <td>-78.652492</td>
+      <td>1111761</td>
+    </tr>
+    <tr>
+      <th>20209</th>
+      <td>US</td>
+      <td>Kansas</td>
+      <td>Wyandotte</td>
+      <td>39.117273</td>
+      <td>-94.763782</td>
+      <td>165429</td>
     </tr>
   </tbody>
 </table>
@@ -1211,9 +1687,9 @@ PULLING STATE AND COUNTY LOCATIONS FOR: PEPSI2
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#collapse-hide</span>
-<span class="n">ClientCensusCleaned</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;../_data/client_Locations/&#39;</span> <span class="o">+</span> <span class="n">client</span> <span class="o">+</span> <span class="s1">&#39;Cleaned.csv&#39;</span><span class="p">)</span>
+<span class="n">ClientCensusCleaned</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;../data/clients/&#39;</span> <span class="o">+</span><span class="n">client</span><span class="o">+</span><span class="s1">&#39;/&#39;</span><span class="o">+</span><span class="n">client</span><span class="o">+</span><span class="s1">&#39;-Cleaned.csv&#39;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;MERGED THE ORIGINAL &#39;</span> <span class="o">+</span> <span class="n">client</span> <span class="o">+</span> <span class="s1">&#39; LOCATIONS FILE AND ADDED CENSUS DATA, FIPS CODES, AND LAT/LONG&#39;</span><span class="p">)</span>
-<span class="nb">print</span> <span class="p">(</span><span class="s1">&#39;NEW FILE CAN BE FOUND AT: _DATA/CLIENT_LOCATIONS/&#39;</span> <span class="o">+</span> <span class="n">client</span> <span class="o">+</span> <span class="s1">&#39;Cleaned.csv&#39;</span><span class="p">)</span>
+<span class="nb">print</span> <span class="p">(</span><span class="s1">&#39;NEW FILE CAN BE FOUND AT: DATA/SOURCES/CLIENTS/&#39;</span><span class="o">+</span><span class="n">client</span><span class="o">+</span><span class="s1">&#39;/&#39;</span> <span class="o">+</span> <span class="n">client</span> <span class="o">+</span> <span class="s1">&#39;-Cleaned.csv&#39;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -1227,8 +1703,8 @@ PULLING STATE AND COUNTY LOCATIONS FOR: PEPSI2
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>MERGED THE ORIGINAL pepsi2 LOCATIONS FILE AND ADDED CENSUS DATA, FIPS CODES, AND LAT/LONG
-NEW FILE CAN BE FOUND AT: _DATA/CLIENT_LOCATIONS/pepsi2Cleaned.csv
+<pre>MERGED THE ORIGINAL kelloggs LOCATIONS FILE AND ADDED CENSUS DATA, FIPS CODES, AND LAT/LONG
+NEW FILE CAN BE FOUND AT: DATA/SOURCES/CLIENTS/kelloggs/kelloggs-Cleaned.csv
 </pre>
 </div>
 </div>
