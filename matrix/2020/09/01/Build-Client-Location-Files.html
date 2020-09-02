@@ -99,7 +99,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      5 min read
+      4 min read
     
 </span></p>
 
@@ -341,6 +341,39 @@ PULLING STATE AND COUNTY LOCATIONS FOR: KELLOGGS
     
     
 <div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">clientLocations</span><span class="o">.</span><span class="n">columns</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>Index([&#39;state&#39;, &#39;county&#39;], dtype=&#39;object&#39;)</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
 <details class="description">
       <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
         <p><div class="input">
@@ -529,7 +562,6 @@ PULLING STATE AND COUNTY LOCATIONS FOR: KELLOGGS
 <span class="n">clm</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">cenLat</span><span class="p">,</span> <span class="n">clientLocations</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;state&#39;</span><span class="p">,</span> <span class="s1">&#39;county&#39;</span><span class="p">])</span>
 <span class="n">clmCol</span><span class="o">=</span><span class="p">[</span> <span class="s1">&#39;fips&#39;</span><span class="p">,</span> <span class="s1">&#39;country&#39;</span><span class="p">,</span> <span class="s1">&#39;state&#39;</span><span class="p">,</span> <span class="s1">&#39;county&#39;</span><span class="p">,</span> <span class="s1">&#39;lat&#39;</span><span class="p">,</span> <span class="s1">&#39;long&#39;</span><span class="p">]</span>
 <span class="n">clientDataCleaned</span><span class="o">=</span><span class="n">clm</span><span class="p">[</span><span class="n">clmCol</span><span class="p">]</span>
-<span class="n">clientDataCleaned</span>
 </pre></div>
 
     </div>
@@ -542,263 +574,48 @@ PULLING STATE AND COUNTY LOCATIONS FOR: KELLOGGS
 
 <div class="output_area">
 
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>&lt;ipython-input-104-4478517d623a&gt;:5: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
 
-<div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<style scoped="">
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>fips</th>
-      <th>country</th>
-      <th>state</th>
-      <th>county</th>
-      <th>lat</th>
-      <th>long</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>8005</td>
-      <td>US</td>
-      <td>Colorado</td>
-      <td>Arapahoe</td>
-      <td>39.649775</td>
-      <td>-104.335362</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>5007</td>
-      <td>US</td>
-      <td>Arkansas</td>
-      <td>Benton</td>
-      <td>36.336447</td>
-      <td>-94.256808</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>26025</td>
-      <td>US</td>
-      <td>Michigan</td>
-      <td>Calhoun</td>
-      <td>42.246338</td>
-      <td>-85.004936</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>34007</td>
-      <td>US</td>
-      <td>New Jersey</td>
-      <td>Camden</td>
-      <td>39.803438</td>
-      <td>-74.963888</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>17031</td>
-      <td>US</td>
-      <td>Illinois</td>
-      <td>Cook</td>
-      <td>41.841448</td>
-      <td>-87.816588</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>47037</td>
-      <td>US</td>
-      <td>Tennessee</td>
-      <td>Davidson</td>
-      <td>36.170074</td>
-      <td>-86.786461</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>31055</td>
-      <td>US</td>
-      <td>Nebraska</td>
-      <td>Douglas</td>
-      <td>41.295183</td>
-      <td>-96.150853</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>17043</td>
-      <td>US</td>
-      <td>Illinois</td>
-      <td>DuPage</td>
-      <td>41.851170</td>
-      <td>-88.086427</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>47047</td>
-      <td>US</td>
-      <td>Tennessee</td>
-      <td>Fayette</td>
-      <td>35.196158</td>
-      <td>-89.413990</td>
-    </tr>
-    <tr>
-      <th>9</th>
-      <td>13115</td>
-      <td>US</td>
-      <td>Georgia</td>
-      <td>Floyd</td>
-      <td>34.262683</td>
-      <td>-85.215774</td>
-    </tr>
-    <tr>
-      <th>10</th>
-      <td>39061</td>
-      <td>US</td>
-      <td>Ohio</td>
-      <td>Hamilton</td>
-      <td>39.196736</td>
-      <td>-84.545029</td>
-    </tr>
-    <tr>
-      <th>11</th>
-      <td>27053</td>
-      <td>US</td>
-      <td>Minnesota</td>
-      <td>Hennepin</td>
-      <td>45.007615</td>
-      <td>-93.476949</td>
-    </tr>
-    <tr>
-      <th>12</th>
-      <td>12057</td>
-      <td>US</td>
-      <td>Florida</td>
-      <td>Hillsborough</td>
-      <td>27.927656</td>
-      <td>-82.320132</td>
-    </tr>
-    <tr>
-      <th>13</th>
-      <td>26081</td>
-      <td>US</td>
-      <td>Michigan</td>
-      <td>Kent</td>
-      <td>43.031977</td>
-      <td>-85.549346</td>
-    </tr>
-    <tr>
-      <th>14</th>
-      <td>42071</td>
-      <td>US</td>
-      <td>Pennsylvania</td>
-      <td>Lancaster</td>
-      <td>40.039046</td>
-      <td>-76.247701</td>
-    </tr>
-    <tr>
-      <th>15</th>
-      <td>42081</td>
-      <td>US</td>
-      <td>Pennsylvania</td>
-      <td>Lycoming</td>
-      <td>41.343105</td>
-      <td>-77.066300</td>
-    </tr>
-    <tr>
-      <th>16</th>
-      <td>47113</td>
-      <td>US</td>
-      <td>Tennessee</td>
-      <td>Madison</td>
-      <td>35.611820</td>
-      <td>-88.840760</td>
-    </tr>
-    <tr>
-      <th>17</th>
-      <td>42091</td>
-      <td>US</td>
-      <td>Pennsylvania</td>
-      <td>Montgomery</td>
-      <td>40.210537</td>
-      <td>-75.366523</td>
-    </tr>
-    <tr>
-      <th>18</th>
-      <td>39119</td>
-      <td>US</td>
-      <td>Ohio</td>
-      <td>Muskingum</td>
-      <td>39.965760</td>
-      <td>-81.943633</td>
-    </tr>
-    <tr>
-      <th>19</th>
-      <td>21195</td>
-      <td>US</td>
-      <td>Kentucky</td>
-      <td>Pike</td>
-      <td>37.470883</td>
-      <td>-82.394874</td>
-    </tr>
-    <tr>
-      <th>20</th>
-      <td>6073</td>
-      <td>US</td>
-      <td>California</td>
-      <td>San Diego</td>
-      <td>33.034846</td>
-      <td>-116.736533</td>
-    </tr>
-    <tr>
-      <th>21</th>
-      <td>6085</td>
-      <td>US</td>
-      <td>California</td>
-      <td>Santa Clara</td>
-      <td>37.231049</td>
-      <td>-121.697046</td>
-    </tr>
-    <tr>
-      <th>22</th>
-      <td>47157</td>
-      <td>US</td>
-      <td>Tennessee</td>
-      <td>Shelby</td>
-      <td>35.186478</td>
-      <td>-89.896924</td>
-    </tr>
-    <tr>
-      <th>23</th>
-      <td>37183</td>
-      <td>US</td>
-      <td>North Carolina</td>
-      <td>Wake</td>
-      <td>35.788793</td>
-      <td>-78.652492</td>
-    </tr>
-    <tr>
-      <th>24</th>
-      <td>20209</td>
-      <td>US</td>
-      <td>Kansas</td>
-      <td>Wyandotte</td>
-      <td>39.117273</td>
-      <td>-94.763782</td>
-    </tr>
-  </tbody>
-</table>
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  clientDataCleaned[&#39;fips&#39;]+=84000000
+</pre>
 </div>
+</div>
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>0     84008005
+1     84005007
+2     84026025
+3     84034007
+4     84017031
+5     84047037
+6     84031055
+7     84017043
+8     84047047
+9     84013115
+10    84039061
+11    84027053
+12    84012057
+13    84026081
+14    84042071
+15    84042081
+16    84047113
+17    84042091
+18    84039119
+19    84021195
+20    84006073
+21    84006085
+22    84047157
+23    84037183
+24    84020209
+Name: fips, dtype: int64</pre>
 </div>
 
 </div>

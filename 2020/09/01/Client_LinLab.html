@@ -93,7 +93,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      4 min read
+      1 min read
     
 </span></p>
 
@@ -201,7 +201,7 @@ window.onload = wrap_img;
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Select Client: kelloggs
+<pre>Select Client: pepsi
 These are the locations in this file: 
 </pre>
 </div>
@@ -212,31 +212,39 @@ These are the locations in this file:
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>0         Arapahoe
-1           Benton
-2          Calhoun
-3           Camden
-4             Cook
-5         Davidson
-6          Douglas
-7           DuPage
-8          Fayette
-9            Floyd
-10        Hamilton
-11        Hennepin
-12    Hillsborough
-13            Kent
-14       Lancaster
-15        Lycoming
-16         Madison
-17      Montgomery
-18       Muskingum
-19            Pike
-20       San Diego
-21     Santa Clara
-22          Shelby
-23            Wake
-24       Wyandotte
+<pre>0              Bexar
+1              Boone
+2             Broome
+3           Campbell
+4              Clark
+5            Clinton
+6               Cook
+7          Craighead
+8             Dallas
+9             DENVER
+10         Fort Bend
+11             Giles
+12           Harford
+13           Houston
+14              Kern
+15           Lincoln
+16              Linn
+17          Lycoming
+18       Mecklenburg
+19           Norfolk
+20            Orange
+21             Pinal
+22              Rock
+23         Salt Lake
+24    San Bernardino
+25           Shawnee
+26        Stanislaus
+27             Stark
+28           Tarrant
+29         Vermilion
+30             Wayne
+31           Windham
+32              York
 Name: county, dtype: object</pre>
 </div>
 
@@ -304,23 +312,38 @@ Name: county, dtype: object</pre>
 
 <div class="output_area">
 
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
+<span class="ansi-red-intense-fg ansi-bold">MergeError</span>                                Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">&lt;ipython-input-24-b27fe00cb71e&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-intense-fg ansi-bold">----&gt; 1</span><span class="ansi-yellow-intense-fg ansi-bold"> </span>Client_Linlab<span class="ansi-yellow-intense-fg ansi-bold">=</span>pd<span class="ansi-yellow-intense-fg ansi-bold">.</span>merge<span class="ansi-yellow-intense-fg ansi-bold">(</span>client_df<span class="ansi-yellow-intense-fg ansi-bold">,</span> linlab_df<span class="ansi-yellow-intense-fg ansi-bold">,</span> how<span class="ansi-yellow-intense-fg ansi-bold">=</span><span class="ansi-blue-intense-fg ansi-bold">&#39;left&#39;</span><span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-fg">      2</span> Client_Linlab<span class="ansi-yellow-intense-fg ansi-bold">.</span>sort_values<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-yellow-intense-fg ansi-bold">[</span><span class="ansi-blue-intense-fg ansi-bold">&#39;state&#39;</span><span class="ansi-yellow-intense-fg ansi-bold">,</span><span class="ansi-blue-intense-fg ansi-bold">&#39;date&#39;</span><span class="ansi-yellow-intense-fg ansi-bold">]</span><span class="ansi-yellow-intense-fg ansi-bold">,</span> ascending<span class="ansi-yellow-intense-fg ansi-bold">=</span><span class="ansi-green-intense-fg ansi-bold">False</span><span class="ansi-yellow-intense-fg ansi-bold">,</span> inplace<span class="ansi-yellow-intense-fg ansi-bold">=</span><span class="ansi-green-intense-fg ansi-bold">True</span><span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-fg">      3</span> Client_Linlab<span class="ansi-yellow-intense-fg ansi-bold">.</span>date
 
+<span class="ansi-green-intense-fg ansi-bold">C:\Users\anaconda3\envs\USAcovidMAP\lib\site-packages\pandas\core\reshape\merge.py</span> in <span class="ansi-cyan-fg">merge</span><span class="ansi-blue-intense-fg ansi-bold">(left, right, how, on, left_on, right_on, left_index, right_index, sort, suffixes, copy, indicator, validate)</span>
+<span class="ansi-green-fg">     71</span>     validate<span class="ansi-yellow-intense-fg ansi-bold">=</span><span class="ansi-green-intense-fg ansi-bold">None</span><span class="ansi-yellow-intense-fg ansi-bold">,</span>
+<span class="ansi-green-fg">     72</span> ) -&gt; &#34;DataFrame&#34;:
+<span class="ansi-green-intense-fg ansi-bold">---&gt; 73</span><span class="ansi-yellow-intense-fg ansi-bold">     op = _MergeOperation(
+</span><span class="ansi-green-fg">     74</span>         left<span class="ansi-yellow-intense-fg ansi-bold">,</span>
+<span class="ansi-green-fg">     75</span>         right<span class="ansi-yellow-intense-fg ansi-bold">,</span>
 
-<div class="output_text output_subarea output_execute_result">
-<pre>898      8/9/2020
-1351     8/9/2020
-2559     8/9/2020
-3465     8/9/2020
-897      8/8/2020
-          ...    
-155     3/23/2020
-154     3/22/2020
-153     3/21/2020
-152     3/20/2020
-151     3/19/2020
-Name: date, Length: 3775, dtype: object</pre>
+<span class="ansi-green-intense-fg ansi-bold">C:\Users\anaconda3\envs\USAcovidMAP\lib\site-packages\pandas\core\reshape\merge.py</span> in <span class="ansi-cyan-fg">__init__</span><span class="ansi-blue-intense-fg ansi-bold">(self, left, right, how, on, left_on, right_on, axis, left_index, right_index, sort, suffixes, copy, indicator, validate)</span>
+<span class="ansi-green-fg">    618</span>             warnings<span class="ansi-yellow-intense-fg ansi-bold">.</span>warn<span class="ansi-yellow-intense-fg ansi-bold">(</span>msg<span class="ansi-yellow-intense-fg ansi-bold">,</span> UserWarning<span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-fg">    619</span> 
+<span class="ansi-green-intense-fg ansi-bold">--&gt; 620</span><span class="ansi-yellow-intense-fg ansi-bold">         </span>self<span class="ansi-yellow-intense-fg ansi-bold">.</span>_validate_specification<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-fg">    621</span> 
+<span class="ansi-green-fg">    622</span>         <span class="ansi-red-intense-fg ansi-bold"># note this function has side effects</span>
+
+<span class="ansi-green-intense-fg ansi-bold">C:\Users\anaconda3\envs\USAcovidMAP\lib\site-packages\pandas\core\reshape\merge.py</span> in <span class="ansi-cyan-fg">_validate_specification</span><span class="ansi-blue-intense-fg ansi-bold">(self)</span>
+<span class="ansi-green-fg">   1189</span>                 common_cols <span class="ansi-yellow-intense-fg ansi-bold">=</span> self<span class="ansi-yellow-intense-fg ansi-bold">.</span>left<span class="ansi-yellow-intense-fg ansi-bold">.</span>columns<span class="ansi-yellow-intense-fg ansi-bold">.</span>intersection<span class="ansi-yellow-intense-fg ansi-bold">(</span>self<span class="ansi-yellow-intense-fg ansi-bold">.</span>right<span class="ansi-yellow-intense-fg ansi-bold">.</span>columns<span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-fg">   1190</span>                 <span class="ansi-green-intense-fg ansi-bold">if</span> len<span class="ansi-yellow-intense-fg ansi-bold">(</span>common_cols<span class="ansi-yellow-intense-fg ansi-bold">)</span> <span class="ansi-yellow-intense-fg ansi-bold">==</span> <span class="ansi-cyan-intense-fg ansi-bold">0</span><span class="ansi-yellow-intense-fg ansi-bold">:</span>
+<span class="ansi-green-intense-fg ansi-bold">-&gt; 1191</span><span class="ansi-yellow-intense-fg ansi-bold">                     raise MergeError(
+</span><span class="ansi-green-fg">   1192</span>                         <span class="ansi-blue-intense-fg ansi-bold">&#34;No common columns to perform merge on. &#34;</span>
+<span class="ansi-green-fg">   1193</span>                         <span class="ansi-blue-intense-fg ansi-bold">&#34;Merge options: left_on={lon}, right_on={ron}, &#34;</span>
+
+<span class="ansi-red-intense-fg ansi-bold">MergeError</span>: No common columns to perform merge on. Merge options: left_on=None, right_on=None, left_index=False, right_index=False</pre>
 </div>
-
 </div>
 
 </div>
@@ -347,21 +370,6 @@ Name: date, Length: 3775, dtype: object</pre>
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Select Date: 8/8/2020
-Select Date: 8-8-2020
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div>
     
 
@@ -377,666 +385,6 @@ Select Date: 8-8-2020
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<style scoped="">
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>uid</th>
-      <th>fips</th>
-      <th>country</th>
-      <th>state</th>
-      <th>county</th>
-      <th>lat_</th>
-      <th>long</th>
-      <th>pop19</th>
-      <th>region</th>
-      <th>dispID</th>
-      <th>...</th>
-      <th>Rt_loess_upr</th>
-      <th>positiveIncrease</th>
-      <th>positive</th>
-      <th>positive_7day</th>
-      <th>positive_percapita</th>
-      <th>positiveIncr_percapita</th>
-      <th>deathIncrease</th>
-      <th>death</th>
-      <th>death_percapita</th>
-      <th>deathIncr_percapita</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>293</th>
-      <td>84005007</td>
-      <td>5007</td>
-      <td>US</td>
-      <td>Arkansas</td>
-      <td>Benton</td>
-      <td>36.336447</td>
-      <td>-94.256808</td>
-      <td>279141</td>
-      <td>AR</td>
-      <td>Benton, Arkansas</td>
-      <td>...</td>
-      <td>0.874167</td>
-      <td>57</td>
-      <td>4755</td>
-      <td>37.142857</td>
-      <td>17034.401970</td>
-      <td>204.197879</td>
-      <td>2</td>
-      <td>43</td>
-      <td>154.044014</td>
-      <td>7.164838</td>
-    </tr>
-    <tr>
-      <th>3162</th>
-      <td>84006073</td>
-      <td>6073</td>
-      <td>US</td>
-      <td>California</td>
-      <td>San Diego</td>
-      <td>33.034846</td>
-      <td>-116.736533</td>
-      <td>3338330</td>
-      <td>CA</td>
-      <td>San Diego, California</td>
-      <td>...</td>
-      <td>0.991857</td>
-      <td>652</td>
-      <td>31779</td>
-      <td>390.142857</td>
-      <td>9519.430374</td>
-      <td>195.307234</td>
-      <td>3</td>
-      <td>586</td>
-      <td>175.536870</td>
-      <td>0.898653</td>
-    </tr>
-    <tr>
-      <th>3313</th>
-      <td>84006085</td>
-      <td>6085</td>
-      <td>US</td>
-      <td>California</td>
-      <td>Santa Clara</td>
-      <td>37.231049</td>
-      <td>-121.697046</td>
-      <td>1927852</td>
-      <td>CA</td>
-      <td>Santa Clara, California</td>
-      <td>...</td>
-      <td>1.191649</td>
-      <td>139</td>
-      <td>11475</td>
-      <td>164.857143</td>
-      <td>5952.220399</td>
-      <td>72.100970</td>
-      <td>7</td>
-      <td>203</td>
-      <td>105.298540</td>
-      <td>3.630984</td>
-    </tr>
-    <tr>
-      <th>142</th>
-      <td>84008005</td>
-      <td>8005</td>
-      <td>US</td>
-      <td>Colorado</td>
-      <td>Arapahoe</td>
-      <td>39.649775</td>
-      <td>-104.335362</td>
-      <td>656590</td>
-      <td>CO</td>
-      <td>Arapahoe, Colorado</td>
-      <td>...</td>
-      <td>1.002673</td>
-      <td>52</td>
-      <td>7286</td>
-      <td>50.571429</td>
-      <td>11096.727030</td>
-      <td>79.197064</td>
-      <td>0</td>
-      <td>364</td>
-      <td>554.379445</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <th>1954</th>
-      <td>84012057</td>
-      <td>12057</td>
-      <td>US</td>
-      <td>Florida</td>
-      <td>Hillsborough</td>
-      <td>27.927656</td>
-      <td>-82.320132</td>
-      <td>1471968</td>
-      <td>FL</td>
-      <td>Hillsborough, Florida</td>
-      <td>...</td>
-      <td>0.874515</td>
-      <td>403</td>
-      <td>32268</td>
-      <td>382.714286</td>
-      <td>21921.672210</td>
-      <td>273.783126</td>
-      <td>2</td>
-      <td>388</td>
-      <td>263.592687</td>
-      <td>1.358725</td>
-    </tr>
-    <tr>
-      <th>1501</th>
-      <td>84013115</td>
-      <td>13115</td>
-      <td>US</td>
-      <td>Georgia</td>
-      <td>Floyd</td>
-      <td>34.262683</td>
-      <td>-85.215774</td>
-      <td>98498</td>
-      <td>GA</td>
-      <td>Floyd, Georgia</td>
-      <td>...</td>
-      <td>1.212905</td>
-      <td>60</td>
-      <td>1488</td>
-      <td>35.000000</td>
-      <td>15106.905720</td>
-      <td>609.149424</td>
-      <td>0</td>
-      <td>17</td>
-      <td>172.592337</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <th>746</th>
-      <td>84017031</td>
-      <td>17031</td>
-      <td>US</td>
-      <td>Illinois</td>
-      <td>Cook</td>
-      <td>41.841448</td>
-      <td>-87.816588</td>
-      <td>5150233</td>
-      <td>IL</td>
-      <td>Cook, Illinois</td>
-      <td>...</td>
-      <td>1.181866</td>
-      <td>863</td>
-      <td>110865</td>
-      <td>676.285714</td>
-      <td>21526.210560</td>
-      <td>167.565234</td>
-      <td>4</td>
-      <td>4924</td>
-      <td>956.073249</td>
-      <td>0.776664</td>
-    </tr>
-    <tr>
-      <th>1199</th>
-      <td>84017043</td>
-      <td>17043</td>
-      <td>US</td>
-      <td>Illinois</td>
-      <td>DuPage</td>
-      <td>41.851170</td>
-      <td>-88.086427</td>
-      <td>922921</td>
-      <td>IL</td>
-      <td>DuPage, Illinois</td>
-      <td>...</td>
-      <td>1.148015</td>
-      <td>134</td>
-      <td>12155</td>
-      <td>110.714286</td>
-      <td>13170.141320</td>
-      <td>145.191192</td>
-      <td>1</td>
-      <td>520</td>
-      <td>563.428506</td>
-      <td>1.083516</td>
-    </tr>
-    <tr>
-      <th>3766</th>
-      <td>84020209</td>
-      <td>20209</td>
-      <td>US</td>
-      <td>Kansas</td>
-      <td>Wyandotte</td>
-      <td>39.117273</td>
-      <td>-94.763782</td>
-      <td>165429</td>
-      <td>KS</td>
-      <td>Wyandotte, Kansas</td>
-      <td>...</td>
-      <td>1.035234</td>
-      <td>54</td>
-      <td>4864</td>
-      <td>70.142857</td>
-      <td>29402.341790</td>
-      <td>326.424025</td>
-      <td>0</td>
-      <td>99</td>
-      <td>598.444046</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <th>3011</th>
-      <td>84021195</td>
-      <td>21195</td>
-      <td>US</td>
-      <td>Kentucky</td>
-      <td>Pike</td>
-      <td>37.470883</td>
-      <td>-82.394874</td>
-      <td>57876</td>
-      <td>KY</td>
-      <td>Pike, Kentucky</td>
-      <td>...</td>
-      <td>NaN</td>
-      <td>17</td>
-      <td>250</td>
-      <td>4.428571</td>
-      <td>4319.579791</td>
-      <td>293.731426</td>
-      <td>0</td>
-      <td>3</td>
-      <td>51.834958</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <th>444</th>
-      <td>84026025</td>
-      <td>26025</td>
-      <td>US</td>
-      <td>Michigan</td>
-      <td>Calhoun</td>
-      <td>42.246338</td>
-      <td>-85.004936</td>
-      <td>134159</td>
-      <td>MI</td>
-      <td>Calhoun, Michigan</td>
-      <td>...</td>
-      <td>NaN</td>
-      <td>7</td>
-      <td>789</td>
-      <td>7.428571</td>
-      <td>5881.081403</td>
-      <td>52.176895</td>
-      <td>0</td>
-      <td>41</td>
-      <td>305.607525</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <th>2105</th>
-      <td>84026081</td>
-      <td>26081</td>
-      <td>US</td>
-      <td>Michigan</td>
-      <td>Kent</td>
-      <td>43.031977</td>
-      <td>-85.549346</td>
-      <td>656955</td>
-      <td>MI</td>
-      <td>Kent, Michigan</td>
-      <td>...</td>
-      <td>0.958919</td>
-      <td>37</td>
-      <td>7485</td>
-      <td>54.285714</td>
-      <td>11393.474440</td>
-      <td>56.320448</td>
-      <td>-1</td>
-      <td>157</td>
-      <td>238.981361</td>
-      <td>-1.522174</td>
-    </tr>
-    <tr>
-      <th>1803</th>
-      <td>84027053</td>
-      <td>27053</td>
-      <td>US</td>
-      <td>Minnesota</td>
-      <td>Hennepin</td>
-      <td>45.007615</td>
-      <td>-93.476949</td>
-      <td>1265843</td>
-      <td>MN</td>
-      <td>Hennepin, Minnesota</td>
-      <td>...</td>
-      <td>1.082059</td>
-      <td>283</td>
-      <td>19057</td>
-      <td>215.714286</td>
-      <td>15054.789580</td>
-      <td>223.566430</td>
-      <td>3</td>
-      <td>831</td>
-      <td>656.479516</td>
-      <td>2.369962</td>
-    </tr>
-    <tr>
-      <th>1048</th>
-      <td>84031055</td>
-      <td>31055</td>
-      <td>US</td>
-      <td>Nebraska</td>
-      <td>Douglas</td>
-      <td>41.295183</td>
-      <td>-96.150853</td>
-      <td>571327</td>
-      <td>NE</td>
-      <td>Douglas, Nebraska</td>
-      <td>...</td>
-      <td>1.116159</td>
-      <td>51</td>
-      <td>11190</td>
-      <td>121.428571</td>
-      <td>19585.981410</td>
-      <td>89.265867</td>
-      <td>0</td>
-      <td>132</td>
-      <td>231.041067</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <th>595</th>
-      <td>84034007</td>
-      <td>34007</td>
-      <td>US</td>
-      <td>New Jersey</td>
-      <td>Camden</td>
-      <td>39.803438</td>
-      <td>-74.963888</td>
-      <td>506471</td>
-      <td>NJ</td>
-      <td>Camden, New Jersey</td>
-      <td>...</td>
-      <td>1.113169</td>
-      <td>26</td>
-      <td>8525</td>
-      <td>27.285714</td>
-      <td>16832.158210</td>
-      <td>51.335614</td>
-      <td>0</td>
-      <td>578</td>
-      <td>1141.230199</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <th>3615</th>
-      <td>84037183</td>
-      <td>37183</td>
-      <td>US</td>
-      <td>North Carolina</td>
-      <td>Wake</td>
-      <td>35.788793</td>
-      <td>-78.652492</td>
-      <td>1111761</td>
-      <td>NC</td>
-      <td>Wake, North Carolina</td>
-      <td>...</td>
-      <td>0.950105</td>
-      <td>132</td>
-      <td>11906</td>
-      <td>133.857143</td>
-      <td>10709.136230</td>
-      <td>118.730554</td>
-      <td>4</td>
-      <td>168</td>
-      <td>151.111615</td>
-      <td>3.597896</td>
-    </tr>
-    <tr>
-      <th>1652</th>
-      <td>84039061</td>
-      <td>39061</td>
-      <td>US</td>
-      <td>Ohio</td>
-      <td>Hamilton</td>
-      <td>39.196736</td>
-      <td>-84.545029</td>
-      <td>817473</td>
-      <td>OH</td>
-      <td>Hamilton, Ohio</td>
-      <td>...</td>
-      <td>0.959190</td>
-      <td>90</td>
-      <td>9583</td>
-      <td>76.428571</td>
-      <td>11722.711330</td>
-      <td>110.095379</td>
-      <td>2</td>
-      <td>255</td>
-      <td>311.936908</td>
-      <td>2.446564</td>
-    </tr>
-    <tr>
-      <th>2860</th>
-      <td>84039119</td>
-      <td>39119</td>
-      <td>US</td>
-      <td>Ohio</td>
-      <td>Muskingum</td>
-      <td>39.965760</td>
-      <td>-81.943633</td>
-      <td>86215</td>
-      <td>OH</td>
-      <td>Muskingum, Ohio</td>
-      <td>...</td>
-      <td>NaN</td>
-      <td>4</td>
-      <td>225</td>
-      <td>7.142857</td>
-      <td>2609.754683</td>
-      <td>46.395639</td>
-      <td>0</td>
-      <td>1</td>
-      <td>11.598910</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <th>2256</th>
-      <td>84042071</td>
-      <td>42071</td>
-      <td>US</td>
-      <td>Pennsylvania</td>
-      <td>Lancaster</td>
-      <td>40.039046</td>
-      <td>-76.247701</td>
-      <td>545724</td>
-      <td>PA</td>
-      <td>Lancaster, Pennsylvania</td>
-      <td>...</td>
-      <td>1.134873</td>
-      <td>34</td>
-      <td>5856</td>
-      <td>38.000000</td>
-      <td>10730.699030</td>
-      <td>62.302556</td>
-      <td>1</td>
-      <td>411</td>
-      <td>753.127955</td>
-      <td>1.832428</td>
-    </tr>
-    <tr>
-      <th>2407</th>
-      <td>84042081</td>
-      <td>42081</td>
-      <td>US</td>
-      <td>Pennsylvania</td>
-      <td>Lycoming</td>
-      <td>41.343105</td>
-      <td>-77.066300</td>
-      <td>113299</td>
-      <td>PA</td>
-      <td>Lycoming, Pennsylvania</td>
-      <td>...</td>
-      <td>NaN</td>
-      <td>12</td>
-      <td>381</td>
-      <td>7.000000</td>
-      <td>3362.783431</td>
-      <td>105.914439</td>
-      <td>0</td>
-      <td>20</td>
-      <td>176.524065</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <th>2709</th>
-      <td>84042091</td>
-      <td>42091</td>
-      <td>US</td>
-      <td>Pennsylvania</td>
-      <td>Montgomery</td>
-      <td>40.210537</td>
-      <td>-75.366523</td>
-      <td>830915</td>
-      <td>PA</td>
-      <td>Montgomery, Pennsylvania</td>
-      <td>...</td>
-      <td>1.073986</td>
-      <td>62</td>
-      <td>10077</td>
-      <td>37.714286</td>
-      <td>12127.594280</td>
-      <td>74.616537</td>
-      <td>2</td>
-      <td>857</td>
-      <td>1031.393103</td>
-      <td>2.406985</td>
-    </tr>
-    <tr>
-      <th>897</th>
-      <td>84047037</td>
-      <td>47037</td>
-      <td>US</td>
-      <td>Tennessee</td>
-      <td>Davidson</td>
-      <td>36.170074</td>
-      <td>-86.786461</td>
-      <td>694144</td>
-      <td>TN</td>
-      <td>Davidson, Tennessee</td>
-      <td>...</td>
-      <td>0.963045</td>
-      <td>198</td>
-      <td>20383</td>
-      <td>172.428571</td>
-      <td>29364.224140</td>
-      <td>285.243408</td>
-      <td>1</td>
-      <td>213</td>
-      <td>306.852757</td>
-      <td>1.440623</td>
-    </tr>
-    <tr>
-      <th>1350</th>
-      <td>84047047</td>
-      <td>47047</td>
-      <td>US</td>
-      <td>Tennessee</td>
-      <td>Fayette</td>
-      <td>35.196158</td>
-      <td>-89.413990</td>
-      <td>41133</td>
-      <td>TN</td>
-      <td>Fayette, Tennessee</td>
-      <td>...</td>
-      <td>1.085634</td>
-      <td>16</td>
-      <td>686</td>
-      <td>10.000000</td>
-      <td>16677.606790</td>
-      <td>388.982083</td>
-      <td>0</td>
-      <td>8</td>
-      <td>194.491041</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <th>2558</th>
-      <td>84047113</td>
-      <td>47113</td>
-      <td>US</td>
-      <td>Tennessee</td>
-      <td>Madison</td>
-      <td>35.611820</td>
-      <td>-88.840760</td>
-      <td>97984</td>
-      <td>TN</td>
-      <td>Madison, Tennessee</td>
-      <td>...</td>
-      <td>1.283976</td>
-      <td>40</td>
-      <td>1064</td>
-      <td>28.714286</td>
-      <td>10858.915740</td>
-      <td>408.229915</td>
-      <td>0</td>
-      <td>17</td>
-      <td>173.497714</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <th>3464</th>
-      <td>84047157</td>
-      <td>47157</td>
-      <td>US</td>
-      <td>Tennessee</td>
-      <td>Shelby</td>
-      <td>35.186478</td>
-      <td>-89.896924</td>
-      <td>937166</td>
-      <td>TN</td>
-      <td>Shelby, Tennessee</td>
-      <td>...</td>
-      <td>1.059754</td>
-      <td>281</td>
-      <td>22916</td>
-      <td>270.714286</td>
-      <td>24452.444920</td>
-      <td>299.840156</td>
-      <td>-1</td>
-      <td>301</td>
-      <td>321.181093</td>
-      <td>-1.067047</td>
-    </tr>
-  </tbody>
-</table>
-<p>25 rows × 27 columns</p>
-</div>
-</div>
-
-</div>
-
 </div>
 </div>
 
